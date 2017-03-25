@@ -1,5 +1,6 @@
 package com.schedulamon.vishnu.schedulamon;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -15,7 +16,7 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
     private ProgressBar progressBar;
     private int pStatus = 0;
     private Handler handler = new Handler();
-
+    int flag = 0;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,10 +29,17 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
        RelativeLayout lowestLayout = (RelativeLayout) this.findViewById(R.id.rel);
         lowestLayout.setOnTouchListener(activitySwipeDetector);
 
+    if(flag == 1){
+        Intent intent = new Intent(this,assesment_detailed.class);
+        startActivity(intent);
+    }
+
     }
 
     @Override
     public void onClick(View v) {
 
     }
+
+
 }
