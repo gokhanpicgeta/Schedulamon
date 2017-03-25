@@ -7,16 +7,87 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.schedulamon.vishnu.schedulamon.assesment_detailed">
+    tools:context="com.schedulamon.vishnu.schedulamon.assesment_detailed"
+    android:background="@layout/background"
+    android:id="@+id/relative"
+    >
 
     <RadioButton
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Start"
-        android:id="@+id/radioButton"
-        android:layout_marginTop="90dp"
+        android:id="@+id/radioButton1"
         android:checked="false"
+        android:layout_marginStart="33dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="33dp" />
+        android:textColor="#ffffff"
+        />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="70dp"
+        android:background="#519def"
+        android:layout_below="@id/radioButton1"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/view1"
+        />
+
+    <RadioButton
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Research Koalas"
+        android:layout_below="@+id/view1"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/radioButton2"
+        />
+    <View
+        android:layout_width="4dp"
+        android:layout_height="90dp"
+        android:background="#519def"
+        android:layout_below="@id/radioButton2"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/view2"
+        />
+
+    <RadioButton
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Write the essay about Koalas"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/radioButton3"
+        />
+
+    <View
+        android:layout_width="4dp"
+        android:layout_height="120dp"
+        android:background="#519def"
+        android:layout_below="@id/radioButton3"
+        android:layout_marginLeft="45dp"
+        android:id="@+id/view3"
+        />
+
+    <RadioButton
+        android:textColor="#ffffff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Proofread and Submit"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="32dp"
+        android:id="@+id/radioButton4"
+        />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/button"
+        android:background="@drawable/add_button"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+
 </RelativeLayout>
