@@ -1,9 +1,12 @@
 package com.schedulamon.vishnu.schedulamon;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Handler;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.Window;
 import android.widget.ProgressBar;
@@ -41,5 +44,18 @@ public class AssesmentActivity extends AppCompatActivity implements View.OnClick
 
     }
 
+    public void progressShit(int counter){
+        LayoutInflater Inflater = (LayoutInflater) AssesmentActivity.this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = Inflater.inflate(R.layout.activity_assesment,null);
+        ProgressBar progressBar = (ProgressBar) findViewById(R.id.progressBar);
+        Log.d("hew", "DSDS");
+        progressBar.setProgress(counter*25);
+       // txtProgress.setText(counter*25 + "%");
+    }
 
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+    }
 }

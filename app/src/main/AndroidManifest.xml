@@ -19,6 +19,9 @@
             android:name=".AssesmentActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".assesment_detailed"></activity>
+        <activity
+            android:name=".notifClass"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
     </application>
 
 </manifest>
